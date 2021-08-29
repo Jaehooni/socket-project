@@ -1,0 +1,22 @@
+{
+  "name": "socket-project",
+  "version": "1.0.0",
+  "description": "repository using socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "running...."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaehooni/socket-project.git"
+  },
+  "author": "Jaehooni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaehooni/socket-project/issues"
+  },
+  "homepage": "https://github.com/Jaehooni/socket-project#readme",
+  "dependencies": {
+    "socket.io": "^4.1.3"
+  }
+}
