@@ -1,5 +1,6 @@
-#goorm ide setting file
+#setting files
 goorm.manifest
+.replit
 
 #dependencies
-./node_modules
+node_modules
