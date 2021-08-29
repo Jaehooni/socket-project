@@ -1,5 +1,2 @@
 #goorm ide setting file
 goorm.manifest
-
-#dependencies
-/node_modules

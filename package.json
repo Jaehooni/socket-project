@@ -2,7 +2,7 @@
   "name": "socket-project",
   "version": "1.0.0",
   "description": "repository using socket.io",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
     "test": "running...."
   },
