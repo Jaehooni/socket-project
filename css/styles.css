@@ -6,5 +6,27 @@ html, body{
 }
 
 body{
-  background-color: #84fc03;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+.loading{
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-image-width: 30px;
+  border-image: linear-gredient(to right,rgb(255, 153, 255), rgb(0, 255, 204)) 1;
+  /* border-radius: 50%; */
+}
+
