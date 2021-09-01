@@ -40,4 +40,9 @@
   font-size: 35px;
   font-weight: 700;
   color: white;
+  cursor: pointer;
+}
+
+.start-page-option > button:hover{
+  background-color: rgb(255, 62, 62);
 }
