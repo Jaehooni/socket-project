@@ -26,6 +26,12 @@
   margin-top: 20px;
   margin-left: -80px;
 }
+
+.start-page-option > button{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border:0;
   background-color: rgb(255, 102, 102);
   border-radius: 50px;
   display: flex;

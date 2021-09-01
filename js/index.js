@@ -1,6 +1,6 @@
 const loading = document.querySelector('.loading');
 const startPageWrapper = document.querySelector('.start-page-wrapper');
-const startButton = document.querySelector('.start-page-option h2:nth-child(1)')
+const startButton = document.querySelector('.start-page-option > button')
 
 const entranceEffect = function(){
     startPageWrapper.classList.toggle('blur');
