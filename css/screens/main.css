@@ -1,29 +1,31 @@
 /* @import 'loading.css'; */
 .start-page-wrapper{
-  position: fixed;
   width: inherit;
   height: inherit;
   display: flex;
-  justify-content: center;
+  padding-top: 120px;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .welcome-phrases{
-  position: fixed;
-  width: 800px;
+  width: 800px; /* TODO: 가로 길이 초과시 대책 필요 */
   text-align: center;
-  top: 120px;
   font-size: 70px;
   font-weight: 700;
   color: white;
 }
 
 .start-page-option{
-  position: fixed;
-  margin-top: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 160px;
   height: 70px;
+  margin-top: 20px;
+  margin-left: -80px;
+}
   background-color: rgb(255, 102, 102);
   border-radius: 50px;
   display: flex;
