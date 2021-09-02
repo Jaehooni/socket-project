@@ -17,6 +17,7 @@ html, body{
   height: 100%;
   background: var(--background-color);
   box-sizing: content-box;
+  font-family: 'Lato', sans-serif;
 }
 
 .invisible{
@@ -25,4 +26,14 @@ html, body{
 
 .blur{
   filter: blur(10px);
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.none{
+  display: none;
 }

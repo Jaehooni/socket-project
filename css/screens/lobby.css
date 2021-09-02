@@ -1,7 +1,55 @@
 .lobby-screen{
-  width: 1000px;
-  height: 650px;
-  background-color: rgb(0, 102, 153);
-  border-radius: 50px;
-  z-index: 1;
+  width: 900px;
+  height: 630px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(180, 180, 255);
+}
+
+.lobby-screen__games,
+.lobby-screen__rooms{
+  border-radius: 20px;
+}
+
+.lobby-screen__games{
+  width: 12%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 153, 153);
+}
+
+.lobby-screen__games li{
+  width: 70px;
+  height: 70px;
+  margin: 10px 0px;
+  background-color: rgb(255, 255, 204);
+  border: 2px solid rgb(255, 153, 102);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lobby-screen__games img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.lobby-screen__games span{
+  position: absolute;
+  bottom: -20px;
+  color: whitesmoke;
+}
+
+.lobby-screen__rooms{
+  width: 83%;
+  height: 90%;
+  background-color: rgb(255, 204, 204);
 }

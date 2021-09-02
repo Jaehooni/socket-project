@@ -27,6 +27,7 @@
   background-color: rgb(255, 102, 102);
   border-radius: 50px;
   font-size: 35px;
+  cursor: pointer; 
 }
 
 h1{
