@@ -1,17 +1,20 @@
 const loading = document.querySelector('.loading');
-const startPageWrapper = document.querySelector('.start-page-wrapper');
-const startButton = document.querySelector('.start-page-option h2:nth-child(1)')
+const startButton = document.querySelector('.start-button')
+const welcome = document.querySelector('.welcome')
 
-const entranceEffect = function(){
-    startPageWrapper.classList.toggle('blur');
+const entrance = function(){
+    welcome.classList.toggle('blur');
     loading.classList.toggle('invisible');
+    setTimeout(function(){
+      location.href = "lobby.html";
+    }, 3000)
 }
 
-const temp = function(){
-    startPageWrapper.classList.toggle('blur');
-    loading.classList.toggle('invisible');
-}
+// const temp = function(){
+//     startPageWrapper.classList.toggle('blur');
+//     loading.classList.toggle('invisible');
+// }
 
-startButton.addEventListener('click', entranceEffect);
-loading.addEventListener('click', temp);
+startButton.addEventListener('click', entrance);
+// loading.addEventListener('click', temp);
 
