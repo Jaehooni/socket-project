@@ -15,8 +15,8 @@
 }
 
 .lobby-screen__games{
-  width: 12%;
-  height: 90%;
+  width: 10%;
+  height: 94%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,8 @@
 
 .lobby-screen__games span{
   position: absolute;
-  bottom: -20px;
+  bottom: -15px;
+  font-size: 12px;
   color: whitesmoke;
 }
 
@@ -52,4 +53,33 @@
   width: 83%;
   height: 90%;
   background-color: rgb(255, 204, 204);
+  border: 10px solid rgb(255, 204, 204);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; */
+  overflow-y: auto;
+}
+
+.lobby-screen__room{
+  width: 98%;
+  height: 30%;
+  border-radius: 20px;
+  background: linear-gradient(rgb(204, 102, 153) 30%, white 30%);
+  margin: 8px auto;
+}
+
+.lobby-screen__rooms::-webkit-scrollbar{
+  width: 10px;
+}
+
+.lobby-screen__rooms::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 153, 153);
+  border-radius: 10px;
+}
+.lobby-screen__rooms::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 153, 153);
+  /* box-shadow: inset 0px 0px 5px white; */
 }
