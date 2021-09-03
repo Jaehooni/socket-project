@@ -23,14 +23,14 @@
   background-color: rgb(255, 153, 153);
 }
 
-.lobby-screen__games li,
+.lobby-screen__game,
 .lobby-screen__room-aside{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.lobby-screen__games li{
+.lobby-screen__game{
   width: 70px;
   height: 70px;
   margin: 10px 0px;
@@ -40,13 +40,19 @@
   position: relative;
 }
 
+.lobby-screen__game:first-child span{
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(133, 193, 233);
+}
+
 .lobby-screen__games img{
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
-.lobby-screen__games span{
+.lobby-screen__game-name{
   position: absolute;
   bottom: -15px;
   font-size: 12px;
@@ -80,6 +86,7 @@
   width: 98%;
   height: 30%;
   background-color: white;
+  color: var(--lobby-room-color);
   border-radius: 20px;
   border: 2px solid var(--lobby-room-color);
   margin: 8px auto;
@@ -101,7 +108,6 @@
 .lobby-screen__room-number{
   font-size: 40px;
   font-weight: 700;
-  color: var(--lobby-room-color);
 }
 
 .lobby-screen__room-main{
@@ -117,7 +123,7 @@
 }
 
 .lobby-screen__room-header{
-  height: 35%;
+  height: 30%;
   border-top-right-radius: 20px;
   padding: 10px 0 0 10px;
 }
@@ -125,5 +131,52 @@
 .lobby-screen__room-name{
   font-size: 40px;
   font-weight: 400;
-  color: var(--lobby-room-color);
+}
+
+.lobby-screen__room-content{
+  height: 60%;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lobby-screen__room-category{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 255, 204);
+  border: 2px solid rgb(255, 153, 102);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 15px 0 0 30px;
+}
+
+.lobby-screen__room-category span{
+  position: absolute;
+  top: -20px;
+  width: 100px;
+  text-align: center;
+}
+
+.lobby-screen__room-category img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.lobby-screen__room-headcount{
+  width: 30%;
+  height: 110%;
+  margin-top: 15px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lobby-screen__room-headcount span{
+  font-size: 90px;
 }
