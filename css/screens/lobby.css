@@ -23,6 +23,13 @@
   background-color: rgb(255, 153, 153);
 }
 
+.lobby-screen__games li,
+.lobby-screen__room-aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lobby-screen__games li{
   width: 70px;
   height: 70px;
@@ -30,9 +37,6 @@
   background-color: rgb(255, 255, 204);
   border: 2px solid rgb(255, 153, 102);
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -54,19 +58,7 @@
   height: 90%;
   background-color: rgb(255, 204, 204);
   border: 10px solid rgb(255, 204, 204);
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; */
   overflow-y: auto;
-}
-
-.lobby-screen__room{
-  width: 98%;
-  height: 30%;
-  border-radius: 20px;
-  background: linear-gradient(rgb(204, 102, 153) 30%, white 30%);
-  margin: 8px auto;
 }
 
 .lobby-screen__rooms::-webkit-scrollbar{
@@ -82,4 +74,56 @@
   border-radius: 10px;
   border: 1px solid rgb(255, 153, 153);
   /* box-shadow: inset 0px 0px 5px white; */
+}
+
+.lobby-screen__room{
+  width: 98%;
+  height: 30%;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid var(--lobby-room-color);
+  margin: 8px auto;
+  display: flex;
+}
+
+.lobby-screen__room > div{
+  height: 100%;
+  background-color: white;
+}
+
+.lobby-screen__room-aside{
+  width: 20%;
+  border-right: 2px solid var(--lobby-room-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.lobby-screen__room-number{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--lobby-room-color);
+}
+
+.lobby-screen__room-main{
+  width: 80%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Jua', sans-serif;
+}
+
+.lobby-screen__room-header,
+.lobby-screen__room-content{
+  width: 100%;
+}
+
+.lobby-screen__room-header{
+  height: 35%;
+  border-top-right-radius: 20px;
+  padding: 10px 0 0 10px;
+}
+
+.lobby-screen__room-name{
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--lobby-room-color);
 }

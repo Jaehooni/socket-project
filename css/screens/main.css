@@ -16,6 +16,7 @@
 .welcome__phrase{
   width: 800px;
   font-size: 70px;
+  text-align: center;
 }
 
 .start-button{
@@ -27,9 +28,5 @@
   background-color: rgb(255, 102, 102);
   border-radius: 50px;
   font-size: 35px;
-  cursor: pointer; 
-}
-
-h1{
-  text-align: center;
+  cursor: pointer;
 }
