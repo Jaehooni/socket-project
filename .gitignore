@@ -4,3 +4,4 @@ goorm.manifest
 
 #dependencies
 node_modules
+package.json
