@@ -1,0 +1,182 @@
+.lobby-screen{
+  width: 900px;
+  height: 630px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(180, 180, 255);
+}
+
+.lobby-screen__games,
+.lobby-screen__rooms{
+  border-radius: 20px;
+}
+
+.lobby-screen__games{
+  width: 10%;
+  height: 94%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 153, 153);
+}
+
+.lobby-screen__game,
+.lobby-screen__room-aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lobby-screen__game{
+  width: 70px;
+  height: 70px;
+  margin: 10px 0px;
+  background-color: rgb(255, 255, 204);
+  border: 2px solid rgb(255, 153, 102);
+  border-radius: 20px;
+  position: relative;
+}
+
+.lobby-screen__game:first-child span{
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(133, 193, 233);
+}
+
+.lobby-screen__games img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.lobby-screen__game-name{
+  position: absolute;
+  bottom: -15px;
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+.lobby-screen__rooms{
+  width: 83%;
+  height: 90%;
+  background-color: rgb(255, 204, 204);
+  border: 10px solid rgb(255, 204, 204);
+  overflow-y: auto;
+}
+
+.lobby-screen__rooms::-webkit-scrollbar{
+  width: 10px;
+}
+
+.lobby-screen__rooms::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 153, 153);
+  border-radius: 10px;
+}
+.lobby-screen__rooms::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 153, 153);
+  /* box-shadow: inset 0px 0px 5px white; */
+}
+
+.lobby-screen__room{
+  width: 98%;
+  height: 30%;
+  background-color: white;
+  color: var(--lobby-room-color);
+  border-radius: 20px;
+  border: 2px solid var(--lobby-room-color);
+  margin: 8px auto;
+  display: flex;
+}
+
+.lobby-screen__room > div{
+  height: 100%;
+  background-color: white;
+}
+
+.lobby-screen__room-aside{
+  width: 20%;
+  border-right: 2px solid var(--lobby-room-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.lobby-screen__room-number{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.lobby-screen__room-main{
+  width: 80%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Jua', sans-serif;
+}
+
+.lobby-screen__room-header,
+.lobby-screen__room-content{
+  width: 100%;
+}
+
+.lobby-screen__room-header{
+  height: 30%;
+  border-top-right-radius: 20px;
+  padding: 10px 0 0 10px;
+}
+
+.lobby-screen__room-name{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.lobby-screen__room-content{
+  height: 60%;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lobby-screen__room-category{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 255, 204);
+  border: 2px solid rgb(255, 153, 102);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 15px 0 0 30px;
+}
+
+.lobby-screen__room-category span{
+  position: absolute;
+  top: -20px;
+  width: 100px;
+  text-align: center;
+}
+
+.lobby-screen__room-category img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.lobby-screen__room-headcount{
+  width: 30%;
+  height: 110%;
+  margin-top: 15px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lobby-screen__room-headcount span{
+  font-size: 90px;
+}
