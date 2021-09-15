@@ -64,6 +64,7 @@
   height: 90%;
   background-color: rgb(255, 204, 204);
   border: 10px solid rgb(255, 204, 204);
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -142,8 +143,8 @@
 }
 
 .lobby-screen__room-category{
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   background-color: rgb(255, 255, 204);
   border: 2px solid rgb(255, 153, 102);
   border-radius: 20px;
@@ -151,12 +152,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 15px 0 0 30px;
+  margin: 20px 0 0 30px;
 }
 
 .lobby-screen__room-category span{
   position: absolute;
-  top: -20px;
+  top: -17px;
   width: 100px;
   text-align: center;
 }
@@ -170,13 +171,12 @@
 .lobby-screen__room-headcount{
   width: 30%;
   height: 110%;
-  margin-top: 15px;
-  margin-right: 30px;
+  margin: 30px 5px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .lobby-screen__room-headcount span{
-  font-size: 90px;
+  font-size: 80px;
 }
